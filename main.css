@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 2rem;
+    background-color: rgb(24, 24, 24);
+    font-family:"Double Scratch",sans-serif;
+}
+
+
+@font-face {
+    font-family: "Double Scratch";
+    src: url("fonts/Double Scratch.ttf");
+}
+
+
+.content {
+    border-radius: 15px;
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 60rem;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.74);
+    box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.78);
+}
+
+.error {
+    text-align: center;
+    color: #ff0000;
+    user-select: none;
+    font-size: 1.3rem;
+}
+
+h2 {
+    text-align: center;
+    /*text-shadow: 0 1px 10px #fdd300;*/
+    margin: 10px auto;
+    border-radius: 15px;
+    font-size: 3.3rem;
+    animation:neon 5s ease-in-out infinite;
+}
+@keyframes neon {
+    0% {
+        text-shadow: 0 1px 5px #fdd300;
+    }
+    25% {
+        text-shadow: 0 0 5px #fd0000;
+    }
+    50% {
+        text-shadow: 0 0 5px #0019fd;
+    }
+    75% {
+        text-shadow: 0 0 5px #00fd2a;
+    }
+    100% {
+        text-shadow: 0 0 5px #fdd300;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.info p {
+    text-shadow: 0 1px 1px #fd00d3;
+    display: block;
+    margin: 20px auto;
+    background-color: rgba(64, 175, 32, 0.48);
+    border-radius: 15px;
+    user-select: none;
+    font-size: 1.3rem;
+    padding: .5rem;
+    cursor: pointer;
+    outline: none;
+    transition:ease .3s ;
+    box-shadow: 0px 0px 10px 3px rgba(64, 175, 32, 0.48);
+}
+
+.info p:hover {
+    text-shadow: 0 1px 1px #000000;
+    background-color: rgba(64, 175, 32, 0);
+    box-shadow: 0px 0px 10px 3px rgba(202, 241, 190, 0.48);
+}
+
+.Uclick {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.upload {
+    text-shadow: 0 1px 1px #fd0000;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+    user-select: none;
+    background-color: #e2a120;
+    font-size: 2rem;
+    padding: .5rem;
+    border:none;
+    font-family:"Double Scratch",sans-serif;
+    outline: none;
+    cursor: pointer;
+    transition:ease .3s ;
+    box-shadow: 0px 0px 10px 3px rgba(226, 161, 32, 0.8);
+}
+
+.upload:hover {
+    text-shadow: 0 1px 1px #0019fd;
+    background-color: rgba(238, 206, 152, 0.8);
+    box-shadow: 0px 0px 10px 3px rgba(238, 206, 152, 0.8);
+}
+
+.dropzone {
+    text-shadow: 0 1px 1px #00fd00;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin:0 auto 1rem auto;
+    padding: 0 2rem;
+    height: 250px;
+    color: #000000;
+    font-size: 3.5em;
+    cursor: pointer;
+    border: 2px dashed #000000;
+    transition: ease .3s;
+}
+
+.dropzone:hover {
+    text-shadow: 0 1px 1px #00ffe1;
+    background-color: rgb(217, 217, 217);
+    border-color: #ffdd00;
+}
+
+.dropzone.dragover {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-color: #5eff00;
+    color:#000;
+}
+
+.dropzone.Ndragover {
+    cursor: grab;
+}
+
+.Progress {
+    font-size: 16px;
+    text-shadow: 0 1px 1px #eca0a0;
+    margin-top: 12px;
+    text-align: center;
+    height: 15px;
+    border-radius: 30px;
+    background-color: rgb(70, 203, 70);
+    box-shadow: 0px 0px 10px 0px rgb(155, 238, 152);
+    -webkit-transition: width 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    -moz-transition: width 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    -o-transition: width 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    transition: width 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+}
