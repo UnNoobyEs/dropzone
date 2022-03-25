@@ -21,4 +21,4 @@ Project start instructions
 ## To run the project, you need to follow these steps:
 
 1) Download XAMPP
-2) Download the Zip file from Github and extract it.
+2) Download the Zip file from Github and unpack it.
